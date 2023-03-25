@@ -8,4 +8,4 @@ add_executable(Students_System
         .idea/modules.xml
         .idea/Students-System.iml
         .idea/workspace.xml
-        start.cpp)
+        start.cpp model/Student.cpp)
