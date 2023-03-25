@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Students_System.exe"
+			"path" : "start.exe"
 		},
 		{
-			"path" : "Students_System.pdb"
+			"path" : "start.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -55,12 +55,13 @@
 			},
 			"sourceIndexes" : 
 			[
-				4,
-				5
+				0,
+				1,
+				2
 			]
 		}
 	],
-	"id" : "Students_System::@6890427a1f51a3e7e1df",
+	"id" : "start::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -80,8 +81,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Students_System",
-	"nameOnDisk" : "Students_System.exe",
+	"name" : "start",
+	"nameOnDisk" : "start.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,21 +91,12 @@
 	"sourceGroups" : 
 	[
 		{
-			"name" : "",
+			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
 				0,
 				1,
-				2,
-				3
-			]
-		},
-		{
-			"name" : "Source Files",
-			"sourceIndexes" : 
-			[
-				4,
-				5
+				2
 			]
 		}
 	],
@@ -112,35 +104,21 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : ".idea/.gitignore",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : ".idea/modules.xml",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : ".idea/Students-System.iml",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : ".idea/workspace.xml",
+			"compileGroupIndex" : 0,
+			"path" : "start.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "start.cpp",
-			"sourceGroupIndex" : 1
+			"path" : "model/Teacher.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "model/Student.cpp",
-			"sourceGroupIndex" : 1
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"

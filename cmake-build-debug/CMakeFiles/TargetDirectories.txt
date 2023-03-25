@@ -1,3 +1,4 @@
 D:/OOP 2023/Students-System/cmake-build-debug/CMakeFiles/Students_System.dir
+D:/OOP 2023/Students-System/cmake-build-debug/CMakeFiles/start.dir
 D:/OOP 2023/Students-System/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/OOP 2023/Students-System/cmake-build-debug/CMakeFiles/rebuild_cache.dir

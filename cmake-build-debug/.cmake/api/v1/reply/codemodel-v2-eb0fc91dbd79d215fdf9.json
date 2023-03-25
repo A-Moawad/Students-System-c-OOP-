@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "Students_System",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Students_System::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Students_System-Debug-b5033893d3150b510269.json",
+					"jsonFile" : "target-Students_System-Debug-4b11a442137c6cde9b12.json",
 					"name" : "Students_System",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "start::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-start-Debug-2704da3efdf9a5c0da53.json",
+					"name" : "start",
 					"projectIndex" : 0
 				}
 			]

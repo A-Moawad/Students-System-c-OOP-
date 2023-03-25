@@ -55,6 +55,12 @@ build CMakeFiles/Students_System.dir/start.cpp.obj: CXX_COMPILER__Students_Syste
   OBJECT_DIR = CMakeFiles\Students_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Students_System.dir
 
+build CMakeFiles/Students_System.dir/model/Teacher.cpp.obj: CXX_COMPILER__Students_System_Debug D$:/OOP$ 2023/Students-System/model/Teacher.cpp || cmake_object_order_depends_target_Students_System
+  DEP_FILE = CMakeFiles\Students_System.dir\model\Teacher.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Students_System.dir
+  OBJECT_FILE_DIR = CMakeFiles\Students_System.dir\model
+
 build CMakeFiles/Students_System.dir/model/Student.cpp.obj: CXX_COMPILER__Students_System_Debug D$:/OOP$ 2023/Students-System/model/Student.cpp || cmake_object_order_depends_target_Students_System
   DEP_FILE = CMakeFiles\Students_System.dir\model\Student.cpp.obj.d
   FLAGS = -g -std=gnu++14
@@ -69,7 +75,7 @@ build CMakeFiles/Students_System.dir/model/Student.cpp.obj: CXX_COMPILER__Studen
 #############################################
 # Link the executable Students_System.exe
 
-build Students_System.exe: CXX_EXECUTABLE_LINKER__Students_System_Debug CMakeFiles/Students_System.dir/start.cpp.obj CMakeFiles/Students_System.dir/model/Student.cpp.obj
+build Students_System.exe: CXX_EXECUTABLE_LINKER__Students_System_Debug CMakeFiles/Students_System.dir/start.cpp.obj CMakeFiles/Students_System.dir/model/Teacher.cpp.obj CMakeFiles/Students_System.dir/model/Student.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Students_System.dir
@@ -78,6 +84,51 @@ build Students_System.exe: CXX_EXECUTABLE_LINKER__Students_System_Debug CMakeFil
   TARGET_FILE = Students_System.exe
   TARGET_IMPLIB = libStudents_System.dll.a
   TARGET_PDB = Students_System.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target start
+
+
+#############################################
+# Order-only phony target for start
+
+build cmake_object_order_depends_target_start: phony || CMakeFiles/start.dir
+
+build CMakeFiles/start.dir/start.cpp.obj: CXX_COMPILER__start_Debug D$:/OOP$ 2023/Students-System/start.cpp || cmake_object_order_depends_target_start
+  DEP_FILE = CMakeFiles\start.dir\start.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\start.dir
+  OBJECT_FILE_DIR = CMakeFiles\start.dir
+
+build CMakeFiles/start.dir/model/Teacher.cpp.obj: CXX_COMPILER__start_Debug D$:/OOP$ 2023/Students-System/model/Teacher.cpp || cmake_object_order_depends_target_start
+  DEP_FILE = CMakeFiles\start.dir\model\Teacher.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\start.dir
+  OBJECT_FILE_DIR = CMakeFiles\start.dir\model
+
+build CMakeFiles/start.dir/model/Student.cpp.obj: CXX_COMPILER__start_Debug D$:/OOP$ 2023/Students-System/model/Student.cpp || cmake_object_order_depends_target_start
+  DEP_FILE = CMakeFiles\start.dir\model\Student.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\start.dir
+  OBJECT_FILE_DIR = CMakeFiles\start.dir\model
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target start
+
+
+#############################################
+# Link the executable start.exe
+
+build start.exe: CXX_EXECUTABLE_LINKER__start_Debug CMakeFiles/start.dir/start.cpp.obj CMakeFiles/start.dir/model/Teacher.cpp.obj CMakeFiles/start.dir/model/Student.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\start.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = start.exe
+  TARGET_IMPLIB = libstart.dll.a
+  TARGET_PDB = start.exe.dbg
 
 
 #############################################
@@ -107,6 +158,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Students_System: phony Students_System.exe
 
+build start: phony start.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -115,7 +168,7 @@ build Students_System: phony Students_System.exe
 #############################################
 # Folder: D:/OOP 2023/Students-System/cmake-build-debug
 
-build all: phony Students_System.exe
+build all: phony Students_System.exe start.exe
 
 # =============================================================================
 # Built-in targets
